@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/gh5-brainstorm/Artector",
       "state" : {
-        "branch" : "feature/image-picker",
-        "revision" : "961bf7a46a0a92cfe98bdcb7b31e5d37442159b2"
+        "branch" : "main",
+        "revision" : "fea2643ce36a7f5b87899133c7ea3275e4666040"
       }
     },
     {

@@ -116,9 +116,9 @@ class ViewController: UIViewController {
         Artector.shared.delegate = self
     }
     
-    private func navigateToScanPage(image: UIImage) {
+    private func navigateToScanPage(similarity: SimilarityResponse) {
         let scanVC = ScanViewController()
-        scanVC.image = image
+        scanVC.similarity = similarity
         navigationController?.pushViewController(scanVC, animated: true)
     }
     
@@ -142,14 +142,14 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: ArtectorDelegate {
-    func artector(_: Artector, didReceiveImage: UIImage) {
+    func artector(_: Artector, didReceiveImage image: UIImage, didReceiveSimilarity: SimilarityResponse) {
         DispatchQueue.main.async {
             self.activityIndicator.stopAnimating()
             self.activityIndicator.isHidden = true
             self.audioButton.isEnabled = true
             self.cameraButton.isEnabled = true
             self.galleryButton.isEnabled = true
-            self.navigateToScanPage(image: didReceiveImage)
+            self.navigateToScanPage(similarity: didReceiveSimilarity)
         }
     }
     

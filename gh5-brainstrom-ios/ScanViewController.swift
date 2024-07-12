@@ -5,16 +5,22 @@
 //  Created by danny santoso on 7/12/24.
 //
 
+import Artector
 import UIKit
 
 class ScanViewController: UIViewController {
     
     var image: UIImage?
+    
+    var similarity: SimilarityResponse?
+    
+    private var diagonalLabelView: DiagonalLabelView?
 
     @IBOutlet weak var noteLabel: UILabel! {
         didSet {
             noteLabel.text = "This Image is plagiarism"
             noteLabel.textColor = UIColor.red
+            noteLabel.isHidden = true
         }
     }
     @IBOutlet weak var frameImageView: UIImageView!
@@ -36,17 +42,22 @@ class ScanViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         photoImageView.image = image
+        let maxPercentage: Float = similarity?.similarImage.map { $0.similarityScore }.max() ?? 0
+        let similarityPercentage = (1 - maxPercentage) * 100
         
         // Add diagonal label view to frameImageView
         let diagonalLabelView = DiagonalLabelView(frame: photoImageView.bounds)
-        diagonalLabelView.configure(text: "THIS IMAGE 100% PLAGIARISM")
+        diagonalLabelView.configure(text: "THIS IMAGE \(similarityPercentage)% PLAGIARISM")
         diagonalLabelView.translatesAutoresizingMaskIntoConstraints = false
+        noteLabel.isHidden = similarityPercentage > 50
+        diagonalLabelView.isHidden = similarityPercentage > 50
         photoImageView.addSubview(diagonalLabelView)
+        self.diagonalLabelView = diagonalLabelView
         
         // Constraints for diagonalLabelView
         NSLayoutConstraint.activate([
             diagonalLabelView.leadingAnchor.constraint(equalTo: photoImageView.leadingAnchor),
-            diagonalLabelView.trailingAnchor.constraint(equalTo: frameImageView.trailingAnchor),
+            diagonalLabelView.trailingAnchor.constraint(equalTo: photoImageView.trailingAnchor),
             diagonalLabelView.topAnchor.constraint(equalTo: photoImageView.topAnchor),
             diagonalLabelView.bottomAnchor.constraint(equalTo: photoImageView.bottomAnchor)
         ])
@@ -54,9 +65,7 @@ class ScanViewController: UIViewController {
 
     @IBAction func didTapShowSimillarity(_ sender: Any) {
         let imageGridVC = ImageGridViewController()
-        imageGridVC.images = [
-            "https://rukminim2.flixcart.com/image/850/1000/l1mh7rk0/poster/b/s/j/medium-famous-cartoon-poster-for-kids-shinchan-cartoon-wall-original-imagd5fcasqbqfcg.jpeg?q=20&crop=false",
-            "https://rukminim2.flixcart.com/image/850/1000/l1mh7rk0/poster/b/s/j/medium-famous-cartoon-poster-for-kids-shinchan-cartoon-wall-original-imagd5fcasqbqfcg.jpeg?q=20&crop=false"]
+        imageGridVC.images = similarity?.similarImage ?? []
         self.present(imageGridVC, animated: true, completion: nil)
     }
 }

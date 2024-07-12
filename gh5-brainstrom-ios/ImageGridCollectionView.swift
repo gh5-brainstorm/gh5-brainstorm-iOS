@@ -5,13 +5,14 @@
 //  Created by danny santoso on 7/12/24.
 //
 
+import Artector
 import UIKit
 
 class ImageGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var collectionView: UICollectionView!
     
-    var images: [String] = []
+    var images: [ImageResponse] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ class ImageGridViewController: UIViewController, UICollectionViewDataSource, UIC
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! ImageCell
-        cell.configure(with: images[indexPath.item])
+        cell.configure(with: images[indexPath.item].url, percentage: images[indexPath.item].similarityScore)
         return cell
     }
     
@@ -84,9 +85,23 @@ class ImageCell: UICollectionViewCell {
         imageView.frame = contentView.bounds
     }
     
-    func configure(with urlString: String) {
+    func configure(with urlString: String, percentage: Float = 0) {
         guard let url = URL(string: urlString) else { return }
         imageView.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder"))
+        
+        let diagonalLabelView = DiagonalLabelView(frame: imageView.bounds)
+        diagonalLabelView.configure(text: "THIS IMAGE \(percentage)% PLAGIARISM")
+        diagonalLabelView.translatesAutoresizingMaskIntoConstraints = false
+        diagonalLabelView.isHidden = percentage > 50
+        imageView.addSubview(diagonalLabelView)
+        
+        // Constraints for diagonalLabelView
+        NSLayoutConstraint.activate([
+            diagonalLabelView.leadingAnchor.constraint(equalTo: imageView.leadingAnchor),
+            diagonalLabelView.trailingAnchor.constraint(equalTo: imageView.trailingAnchor),
+            diagonalLabelView.topAnchor.constraint(equalTo: imageView.topAnchor),
+            diagonalLabelView.bottomAnchor.constraint(equalTo: imageView.bottomAnchor)
+        ])
     }
 }
 
