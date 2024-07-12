@@ -1,0 +1,15 @@
+{
+  "originHash" : "244f747e45e1e5c8c7594c17352e3a087a132df2519ac7743cfec1ccf6a57474",
+  "pins" : [
+    {
+      "identity" : "artector",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gh5-brainstorm/Artector",
+      "state" : {
+        "branch" : "feature/image-picker",
+        "revision" : "60abbea74185b976bb2f8c277086ad3c674fbaaf"
+      }
+    }
+  ],
+  "version" : 3
+}

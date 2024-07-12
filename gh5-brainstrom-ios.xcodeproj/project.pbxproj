@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10F63A92C40E59C005F605F /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10F63A72C40E59C005F605F /* ScanViewController.swift */; };
+		E10F63AA2C40E59C005F605F /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10F63A82C40E59C005F605F /* ScanViewController.xib */; };
 		E17101552C40029B00F4291F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17101542C40029B00F4291F /* AppDelegate.swift */; };
 		E17101572C40029B00F4291F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17101562C40029B00F4291F /* SceneDelegate.swift */; };
 		E17101592C40029B00F4291F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17101582C40029B00F4291F /* ViewController.swift */; };
 		E171015C2C40029B00F4291F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E171015B2C40029B00F4291F /* Base */; };
 		E171015E2C40029C00F4291F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E171015D2C40029C00F4291F /* Assets.xcassets */; };
 		E17101612C40029C00F4291F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E17101602C40029C00F4291F /* Base */; };
+		E17F261F2C40BEB20001A62A /* Artector in Frameworks */ = {isa = PBXBuildFile; productRef = E17F261E2C40BEB20001A62A /* Artector */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E10F63A72C40E59C005F605F /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		E10F63A82C40E59C005F605F /* ScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
 		E17101512C40029B00F4291F /* gh5-brainstrom-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gh5-brainstrom-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17101542C40029B00F4291F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E17101562C40029B00F4291F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17F261F2C40BEB20001A62A /* Artector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 				E171015D2C40029C00F4291F /* Assets.xcassets */,
 				E171015F2C40029C00F4291F /* LaunchScreen.storyboard */,
 				E17101622C40029C00F4291F /* Info.plist */,
+				E10F63A72C40E59C005F605F /* ScanViewController.swift */,
+				E10F63A82C40E59C005F605F /* ScanViewController.xib */,
 			);
 			path = "gh5-brainstrom-ios";
 			sourceTree = "<group>";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "gh5-brainstrom-ios";
+			packageProductDependencies = (
+				E17F261E2C40BEB20001A62A /* Artector */,
+			);
 			productName = "gh5-brainstrom-ios";
 			productReference = E17101512C40029B00F4291F /* gh5-brainstrom-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = E17101482C40029B00F4291F;
+			packageReferences = (
+				E17F261D2C40BEB20001A62A /* XCRemoteSwiftPackageReference "Artector" */,
+			);
 			productRefGroup = E17101522C40029B00F4291F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +142,7 @@
 				E171015E2C40029C00F4291F /* Assets.xcassets in Resources */,
 				E17101612C40029C00F4291F /* Base in Resources */,
 				E171015C2C40029B00F4291F /* Base in Resources */,
+				E10F63AA2C40E59C005F605F /* ScanViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 				E17101592C40029B00F4291F /* ViewController.swift in Sources */,
 				E17101552C40029B00F4291F /* AppDelegate.swift in Sources */,
 				E17101572C40029B00F4291F /* SceneDelegate.swift in Sources */,
+				E10F63A92C40E59C005F605F /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +379,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E17F261D2C40BEB20001A62A /* XCRemoteSwiftPackageReference "Artector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gh5-brainstorm/Artector";
+			requirement = {
+				branch = "feature/image-picker";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E17F261E2C40BEB20001A62A /* Artector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E17F261D2C40BEB20001A62A /* XCRemoteSwiftPackageReference "Artector" */;
+			productName = Artector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E17101492C40029B00F4291F /* Project object */;
 }
