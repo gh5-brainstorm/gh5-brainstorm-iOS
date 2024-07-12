@@ -89,10 +89,11 @@ class ImageCell: UICollectionViewCell {
         guard let url = URL(string: urlString) else { return }
         imageView.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder"))
         
+        let percentageValue = (1 - percentage) * 100
         let diagonalLabelView = DiagonalLabelView(frame: imageView.bounds)
-        diagonalLabelView.configure(text: "THIS IMAGE \(percentage)% PLAGIARISM")
+        diagonalLabelView.configure(text: "THIS IMAGE \(percentageValue)% PLAGIARISM")
         diagonalLabelView.translatesAutoresizingMaskIntoConstraints = false
-        diagonalLabelView.isHidden = percentage > 50
+        diagonalLabelView.isHidden = percentageValue < 50
         imageView.addSubview(diagonalLabelView)
         
         // Constraints for diagonalLabelView

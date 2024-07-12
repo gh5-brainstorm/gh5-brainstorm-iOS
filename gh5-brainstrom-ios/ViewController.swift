@@ -116,8 +116,10 @@ class ViewController: UIViewController {
         Artector.shared.delegate = self
     }
     
-    private func navigateToScanPage(similarity: SimilarityResponse) {
+    private func navigateToScanPage(similarity: [SimilarityResponse], image: UIImage) {
+        guard let similarity = similarity.first else { return }
         let scanVC = ScanViewController()
+        scanVC.image = image
         scanVC.similarity = similarity
         navigationController?.pushViewController(scanVC, animated: true)
     }
@@ -142,23 +144,25 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: ArtectorDelegate {
-    func artector(_: Artector, didReceiveImage image: UIImage, didReceiveSimilarity: SimilarityResponse) {
+    func artector(_: Artector, didReceiveImage image: UIImage, didReceiveSimilarity: [SimilarityResponse]) {
         DispatchQueue.main.async {
             self.activityIndicator.stopAnimating()
             self.activityIndicator.isHidden = true
             self.audioButton.isEnabled = true
             self.cameraButton.isEnabled = true
             self.galleryButton.isEnabled = true
-            self.navigateToScanPage(similarity: didReceiveSimilarity)
+            self.navigateToScanPage(similarity: didReceiveSimilarity, image: image)
         }
     }
     
     func artector(_: Artector, didClosePicker: Bool) {
-        self.activityIndicator.stopAnimating()
-        self.activityIndicator.isHidden = true
-        self.audioButton.isEnabled = true
-        self.cameraButton.isEnabled = true
-        self.galleryButton.isEnabled = true
+        DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.isHidden = true
+            self.audioButton.isEnabled = true
+            self.cameraButton.isEnabled = true
+            self.galleryButton.isEnabled = true
+        }
     }
 }
 
