@@ -152,6 +152,14 @@ extension ViewController: ArtectorDelegate {
             self.navigateToScanPage(image: didReceiveImage)
         }
     }
+    
+    func artector(_: Artector, didClosePicker: Bool) {
+        self.activityIndicator.stopAnimating()
+        self.activityIndicator.isHidden = true
+        self.audioButton.isEnabled = true
+        self.cameraButton.isEnabled = true
+        self.galleryButton.isEnabled = true
+    }
 }
 
 extension UIColor {

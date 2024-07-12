@@ -7,272 +7,80 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "70D11524-DA04-4B3B-A16F-F1279F71B10D"
+            uuid = "60857484-8AA3-488C-89CB-7FA6BEDB5528"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Network/HttpCallService.swift"
+            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Utils/ImagePickerService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "processRequest(url:method:data:_:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "checkCameraPermission(from:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D3A7D15A-CDDB-4011-9CDA-F97A4AEA6ECD"
+            uuid = "0E57CEC6-CF1B-4828-A1BB-90EAB7CA4421"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Network/HttpCallService.swift"
+            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Utils/ImagePickerService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "processRequest(url:method:data:_:)"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "checkCameraPermission(from:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "66D9FE71-3110-4B70-A377-62B93A13F1FE"
+            uuid = "AC9B89DF-6C97-4289-A21F-AAD60F7D3AD8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Network/HttpCallService.swift"
+            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Utils/ImagePickerService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "processRequest(url:method:data:_:)"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "checkCameraPermission(from:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "50E6B44E-C316-4DB9-B0B1-6E1284A290CC"
+            uuid = "C9ECE135-03E5-4E78-BAE6-62CB59EBE942"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Artector.swift"
+            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Utils/ImagePickerService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "showCamera(from:)"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "checkCameraPermission(from:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F3979E4D-7B57-4831-B2D3-8C6E36EA4651"
+            uuid = "4D76E2A9-3E4B-4419-B951-AD27199A8AF3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Artector.swift"
+            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Utils/ImagePickerService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "showCamera(from:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D1F2071E-5E72-44AB-BF71-095CA3F46290"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gh5-brainstrom-ios/ScanViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3650B9DB-9566-49AB-BBC8-F8F62189D113"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "gh5-brainstrom-ios/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "navigateToScanPage(image:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FA262CEC-0DB4-4127-80E1-30EC6B079FC6"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Artector.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "imagePickerService(_:didReceiveImage:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2D6287DF-E41B-42E7-827A-42103827AE35"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Artector.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "imagePickerService(_:didReceiveImage:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2F6FB1E0-1CA1-4E21-A384-20C8CCA56E76"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Artector.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "imagePickerService(_:didReceiveImage:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8E77C0B6-7C15-476D-9CA8-0225A2603E03"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Network/HttpCallService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
-            landmarkName = "uploadImage(url:imageData:_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E53DA54C-092D-4483-92E5-4A86AF4AB9FE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Network/HttpCallService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "uploadImage(url:imageData:_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A82F13E1-3E60-4EDD-9132-F1CA7D837FC9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Network/HttpCallService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
-            landmarkName = "uploadImage(url:imageData:_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E78A6651-7B7C-47C2-B547-BB635A0C71C1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Network/HttpCallService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "uploadImage(url:imageData:_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7D71A298-1182-4B2D-9ED6-9A17DCA3C01B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Network/HttpCallService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "uploadImage(url:imageData:_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "76D3DE2C-E58B-4496-8238-9DDB9E79ABD4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Network/HttpCallService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "uploadImage(url:imageData:_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AF1787BB-7ABF-4A44-A7E8-D4F3D2E31DED"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/gh5-brainstrom-ios-flrgzjjsedgjhogyjnaggehjekif/SourcePackages/checkouts/Artector/Sources/Artector/Network/HttpCallService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "uploadImage(url:imageData:_:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "checkCameraPermission(from:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
