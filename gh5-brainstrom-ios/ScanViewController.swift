@@ -8,6 +8,8 @@
 import UIKit
 
 class ScanViewController: UIViewController {
+    
+    var image: UIImage?
 
     @IBOutlet weak var frameImageView: UIImageView!
     @IBOutlet weak var photoImageView: UIImageView! {
@@ -27,7 +29,7 @@ class ScanViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        photoImageView.image = image
     }
 
     @IBAction func didTapProceedButton(_ sender: Any) {

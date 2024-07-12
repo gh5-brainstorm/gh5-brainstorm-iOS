@@ -21,22 +21,22 @@
             <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-frame" translatesAutoresizingMaskIntoConstraints="NO" id="hKH-Bl-nIF">
+                    <rect key="frame" x="90" y="311" width="250" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="eUY-HW-QnA"/>
+                        <constraint firstAttribute="height" constant="250" id="pNM-ur-g6B"/>
+                    </constraints>
+                </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WHx-ve-5mH">
-                    <rect key="frame" x="100" y="286" width="230" height="230"/>
+                    <rect key="frame" x="100" y="321" width="230" height="230"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="230" id="erf-W1-i7v"/>
                         <constraint firstAttribute="height" constant="230" id="zqJ-TJ-nFy"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-frame" translatesAutoresizingMaskIntoConstraints="NO" id="hKH-Bl-nIF">
-                    <rect key="frame" x="15" y="236" width="400" height="400"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="400" id="eUY-HW-QnA"/>
-                        <constraint firstAttribute="height" constant="400" id="pNM-ur-g6B"/>
-                    </constraints>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wX-B0-yi4">
-                    <rect key="frame" x="90" y="636" width="250" height="48"/>
+                    <rect key="frame" x="90" y="577" width="250" height="48"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="BlD-LO-iHx"/>
                         <constraint firstAttribute="width" constant="250" id="cFI-by-D0j"/>
@@ -56,8 +56,8 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1wX-B0-yi4" secondAttribute="bottom" constant="16" id="8tj-1q-5yX"/>
                 <constraint firstItem="1wX-B0-yi4" firstAttribute="centerX" secondItem="hKH-Bl-nIF" secondAttribute="centerX" id="MdH-dV-EBC"/>
                 <constraint firstItem="hKH-Bl-nIF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="PZd-2c-huZ"/>
-                <constraint firstItem="1wX-B0-yi4" firstAttribute="top" secondItem="hKH-Bl-nIF" secondAttribute="bottom" id="Zpz-St-AEl"/>
-                <constraint firstItem="WHx-ve-5mH" firstAttribute="centerY" secondItem="hKH-Bl-nIF" secondAttribute="centerY" constant="-35" id="sjm-wP-4CN"/>
+                <constraint firstItem="1wX-B0-yi4" firstAttribute="top" secondItem="hKH-Bl-nIF" secondAttribute="bottom" constant="16" id="Zpz-St-AEl"/>
+                <constraint firstItem="WHx-ve-5mH" firstAttribute="centerY" secondItem="hKH-Bl-nIF" secondAttribute="centerY" id="sjm-wP-4CN"/>
                 <constraint firstItem="WHx-ve-5mH" firstAttribute="centerX" secondItem="hKH-Bl-nIF" secondAttribute="centerX" id="vQd-s6-9RF"/>
                 <constraint firstItem="hKH-Bl-nIF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="y8P-aq-vCo"/>
             </constraints>
@@ -65,7 +65,7 @@
         </view>
     </objects>
     <resources>
-        <image name="blue-frame" width="348" height="348"/>
+        <image name="blue-frame" width="394" height="700"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

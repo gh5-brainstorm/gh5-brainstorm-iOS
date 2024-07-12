@@ -108,10 +108,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Artector.shared.delegate = self
     }
     
-    private func navigateToScanPage() {
+    private func navigateToScanPage(image: UIImage) {
         let scanVC = ScanViewController()
+        scanVC.image = image
         navigationController?.pushViewController(scanVC, animated: true)
     }
     
@@ -121,6 +123,14 @@ class ViewController: UIViewController {
     
     @IBAction func didTapCameraButton(_ sender: Any) {
         Artector.shared.showCamera(from: self)
+    }
+}
+
+extension ViewController: ArtectorDelegate {
+    func artector(_: Artector, didReceiveImage: UIImage) {
+        DispatchQueue.main.async {
+            self.navigateToScanPage(image: didReceiveImage)
+        }
     }
 }
 
