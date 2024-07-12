@@ -11,8 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanViewController" customModule="gh5_brainstrom_ios" customModuleProvider="target">
             <connections>
                 <outlet property="frameImageView" destination="hKH-Bl-nIF" id="nTI-2K-lNX"/>
+                <outlet property="noteLabel" destination="bz3-Su-mQm" id="LtT-Gm-P82"/>
                 <outlet property="photoImageView" destination="WHx-ve-5mH" id="k0a-63-dHg"/>
-                <outlet property="proceedButton" destination="1wX-B0-yi4" id="cRn-No-3gx"/>
+                <outlet property="similarityButton" destination="1wX-B0-yi4" id="cRn-No-3gx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -36,27 +37,41 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wX-B0-yi4">
-                    <rect key="frame" x="90" y="577" width="250" height="48"/>
+                    <rect key="frame" x="100" y="593" width="230" height="48"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="BlD-LO-iHx"/>
-                        <constraint firstAttribute="width" constant="250" id="cFI-by-D0j"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                     <connections>
-                        <action selector="didTapProceedButton:" destination="-1" eventType="touchUpInside" id="ORX-2s-f0r"/>
+                        <action selector="didTapShowSimillarity:" destination="-1" eventType="touchUpInside" id="Wi8-DV-LsP"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-Su-mQm">
+                    <rect key="frame" x="32" y="270" width="366" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave-blue-2" translatesAutoresizingMaskIntoConstraints="NO" id="xLF-cF-wTa">
+                    <rect key="frame" x="-16" y="726.66666666666663" width="462" height="205.33333333333337"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1wX-B0-yi4" secondAttribute="trailing" constant="32" id="5Te-Pt-eLU"/>
-                <constraint firstItem="1wX-B0-yi4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="6qu-zf-ljP"/>
+                <constraint firstItem="xLF-cF-wTa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="16" id="132-4e-wuq"/>
+                <constraint firstItem="bz3-Su-mQm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="1RY-gx-2G6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bz3-Su-mQm" secondAttribute="trailing" constant="32" id="3i4-t2-YhF"/>
+                <constraint firstAttribute="bottom" secondItem="xLF-cF-wTa" secondAttribute="bottom" id="8dg-x1-W2d"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1wX-B0-yi4" secondAttribute="bottom" constant="16" id="8tj-1q-5yX"/>
-                <constraint firstItem="1wX-B0-yi4" firstAttribute="centerX" secondItem="hKH-Bl-nIF" secondAttribute="centerX" id="MdH-dV-EBC"/>
+                <constraint firstItem="1wX-B0-yi4" firstAttribute="trailing" secondItem="WHx-ve-5mH" secondAttribute="trailing" id="Cgp-Kt-XRW"/>
+                <constraint firstItem="xLF-cF-wTa" firstAttribute="width" secondItem="xLF-cF-wTa" secondAttribute="height" multiplier="430:191" id="P7R-6e-HHR"/>
                 <constraint firstItem="hKH-Bl-nIF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="PZd-2c-huZ"/>
-                <constraint firstItem="1wX-B0-yi4" firstAttribute="top" secondItem="hKH-Bl-nIF" secondAttribute="bottom" constant="16" id="Zpz-St-AEl"/>
+                <constraint firstItem="xLF-cF-wTa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="-16" id="UPO-ke-3Yw"/>
+                <constraint firstItem="1wX-B0-yi4" firstAttribute="leading" secondItem="WHx-ve-5mH" secondAttribute="leading" id="Wl3-nk-PfQ"/>
+                <constraint firstItem="1wX-B0-yi4" firstAttribute="top" secondItem="hKH-Bl-nIF" secondAttribute="bottom" constant="32" id="Zpz-St-AEl"/>
+                <constraint firstItem="hKH-Bl-nIF" firstAttribute="top" secondItem="bz3-Su-mQm" secondAttribute="bottom" constant="20" id="lVx-s2-a0r"/>
                 <constraint firstItem="WHx-ve-5mH" firstAttribute="centerY" secondItem="hKH-Bl-nIF" secondAttribute="centerY" id="sjm-wP-4CN"/>
                 <constraint firstItem="WHx-ve-5mH" firstAttribute="centerX" secondItem="hKH-Bl-nIF" secondAttribute="centerX" id="vQd-s6-9RF"/>
                 <constraint firstItem="hKH-Bl-nIF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="y8P-aq-vCo"/>
@@ -66,6 +81,7 @@
     </objects>
     <resources>
         <image name="blue-frame" width="394" height="700"/>
+        <image name="wave-blue-2" width="1764" height="983"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

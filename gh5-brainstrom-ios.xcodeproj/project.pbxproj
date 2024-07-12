@@ -16,6 +16,9 @@
 		E171015E2C40029C00F4291F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E171015D2C40029C00F4291F /* Assets.xcassets */; };
 		E17101612C40029C00F4291F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E17101602C40029C00F4291F /* Base */; };
 		E17F261F2C40BEB20001A62A /* Artector in Frameworks */ = {isa = PBXBuildFile; productRef = E17F261E2C40BEB20001A62A /* Artector */; };
+		E1A15D7D2C41355B002EC7E3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E1A15D7C2C41355B002EC7E3 /* SDWebImage */; };
+		E1A15D7F2C41355B002EC7E3 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E1A15D7E2C41355B002EC7E3 /* SDWebImageMapKit */; };
+		E1A15D812C413749002EC7E3 /* ImageGridCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A15D802C413749002EC7E3 /* ImageGridCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,7 @@
 		E171015D2C40029C00F4291F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E17101602C40029C00F4291F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E17101622C40029C00F4291F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A15D802C413749002EC7E3 /* ImageGridCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A15D7D2C41355B002EC7E3 /* SDWebImage in Frameworks */,
+				E1A15D7F2C41355B002EC7E3 /* SDWebImageMapKit in Frameworks */,
 				E17F261F2C40BEB20001A62A /* Artector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +77,7 @@
 				E17101622C40029C00F4291F /* Info.plist */,
 				E10F63A72C40E59C005F605F /* ScanViewController.swift */,
 				E10F63A82C40E59C005F605F /* ScanViewController.xib */,
+				E1A15D802C413749002EC7E3 /* ImageGridCollectionView.swift */,
 			);
 			path = "gh5-brainstrom-ios";
 			sourceTree = "<group>";
@@ -93,6 +100,8 @@
 			name = "gh5-brainstrom-ios";
 			packageProductDependencies = (
 				E17F261E2C40BEB20001A62A /* Artector */,
+				E1A15D7C2C41355B002EC7E3 /* SDWebImage */,
+				E1A15D7E2C41355B002EC7E3 /* SDWebImageMapKit */,
 			);
 			productName = "gh5-brainstrom-ios";
 			productReference = E17101512C40029B00F4291F /* gh5-brainstrom-ios.app */;
@@ -124,6 +133,7 @@
 			mainGroup = E17101482C40029B00F4291F;
 			packageReferences = (
 				E17F261D2C40BEB20001A62A /* XCRemoteSwiftPackageReference "Artector" */,
+				E1A15D7B2C41355B002EC7E3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = E17101522C40029B00F4291F /* Products */;
 			projectDirPath = "";
@@ -156,6 +166,7 @@
 				E17101592C40029B00F4291F /* ViewController.swift in Sources */,
 				E17101552C40029B00F4291F /* AppDelegate.swift in Sources */,
 				E17101572C40029B00F4291F /* SceneDelegate.swift in Sources */,
+				E1A15D812C413749002EC7E3 /* ImageGridCollectionView.swift in Sources */,
 				E10F63A92C40E59C005F605F /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +400,14 @@
 				kind = branch;
 			};
 		};
+		E1A15D7B2C41355B002EC7E3 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -396,6 +415,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E17F261D2C40BEB20001A62A /* XCRemoteSwiftPackageReference "Artector" */;
 			productName = Artector;
+		};
+		E1A15D7C2C41355B002EC7E3 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A15D7B2C41355B002EC7E3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		E1A15D7E2C41355B002EC7E3 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1A15D7B2C41355B002EC7E3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

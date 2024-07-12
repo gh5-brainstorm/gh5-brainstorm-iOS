@@ -1,5 +1,5 @@
 {
-  "originHash" : "244f747e45e1e5c8c7594c17352e3a087a132df2519ac7743cfec1ccf6a57474",
+  "originHash" : "32e875823b8b1ec500dbb7230a1b66a32c263dc65a4fb2df8c22e78864c269e5",
   "pins" : [
     {
       "identity" : "artector",
@@ -8,6 +8,15 @@
       "state" : {
         "branch" : "feature/image-picker",
         "revision" : "d0acdc3be2a8da24aa7e4b7e85d6189f798d6b72"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "be0bcd7823ce56629948491f2eaeaa19979514f7",
+        "version" : "5.19.4"
       }
     }
   ],
