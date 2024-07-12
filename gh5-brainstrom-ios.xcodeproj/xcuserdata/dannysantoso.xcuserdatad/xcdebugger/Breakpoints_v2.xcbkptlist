@@ -110,8 +110,8 @@
             filePath = "gh5-brainstrom-ios/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "navigateToScanPage(image:)"
             landmarkType = "7">
          </BreakpointContent>

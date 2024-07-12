@@ -99,6 +99,14 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4sA-DZ-0Ak">
+                                <rect key="frame" x="190" y="441" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IZZ-kY-gTb"/>
+                                    <constraint firstAttribute="width" constant="50" id="llz-ul-E6z"/>
+                                </constraints>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -113,6 +121,7 @@
                             <constraint firstItem="nnT-za-2cH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="9ES-11-2sk"/>
                             <constraint firstItem="gOD-r2-orz" firstAttribute="top" secondItem="IDC-FR-ogg" secondAttribute="bottom" constant="16" id="ASe-Tb-bgI"/>
                             <constraint firstItem="ZgB-7V-cfR" firstAttribute="leading" secondItem="gOD-r2-orz" secondAttribute="leading" id="B7L-V9-vRb"/>
+                            <constraint firstItem="4sA-DZ-0Ak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DHn-nR-M58"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pBD-g7-ZhV" secondAttribute="trailing" constant="32" id="KpN-xx-43l"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IDC-FR-ogg" secondAttribute="trailing" constant="16" id="LSu-Cm-lLH"/>
                             <constraint firstItem="pBD-g7-ZhV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Mpi-ke-5N2"/>
@@ -120,11 +129,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nnT-za-2cH" secondAttribute="trailing" constant="32" id="bF2-RN-xeg"/>
                             <constraint firstItem="gOD-r2-orz" firstAttribute="leading" secondItem="IDC-FR-ogg" secondAttribute="leading" id="lJg-Tj-4S5"/>
                             <constraint firstItem="IDC-FR-ogg" firstAttribute="leading" secondItem="pBD-g7-ZhV" secondAttribute="leading" id="lle-hG-eWX"/>
+                            <constraint firstItem="4sA-DZ-0Ak" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sQY-Sc-JLz"/>
                             <constraint firstItem="IDC-FR-ogg" firstAttribute="top" secondItem="pBD-g7-ZhV" secondAttribute="bottom" constant="10" id="saa-lb-OUO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7ae-qF-P7Z"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="4sA-DZ-0Ak" id="aEw-tS-NGc"/>
                         <outlet property="audioButton" destination="EQB-0x-V6Z" id="DJR-op-Hi4"/>
                         <outlet property="audioLabel" destination="blm-4d-WWE" id="PbF-QS-XrF"/>
                         <outlet property="cameraButton" destination="Npw-Xu-XlJ" id="btL-0v-haM"/>

@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView! {
+        didSet {
+            activityIndicator.isHidden = true
+        }
+    }
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
             titleLabel.text = "How you like\nto scan"
@@ -118,10 +123,20 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapGalleryButton(_ sender: Any) {
+        activityIndicator.startAnimating()
+        activityIndicator.isHidden = false
+        audioButton.isEnabled = false
+        cameraButton.isEnabled = false
+        galleryButton.isEnabled = false
         Artector.shared.showGalleryPicker(from: self)
     }
     
     @IBAction func didTapCameraButton(_ sender: Any) {
+        activityIndicator.startAnimating()
+        activityIndicator.isHidden = false
+        audioButton.isEnabled = false
+        cameraButton.isEnabled = false
+        galleryButton.isEnabled = false
         Artector.shared.showCamera(from: self)
     }
 }
@@ -129,6 +144,11 @@ class ViewController: UIViewController {
 extension ViewController: ArtectorDelegate {
     func artector(_: Artector, didReceiveImage: UIImage) {
         DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.isHidden = true
+            self.audioButton.isEnabled = true
+            self.cameraButton.isEnabled = true
+            self.galleryButton.isEnabled = true
             self.navigateToScanPage(image: didReceiveImage)
         }
     }
